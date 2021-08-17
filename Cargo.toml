@@ -1,0 +1,16 @@
+[package]
+name = "gen_id_one_to_many"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ref-cast = "1.0.6"
+force_derive = { git = "https://github.com/frsrblch/force_derive" }
+iter_context = { git = "https://github.com/frsrblch/iter_context" }
+gen_id_allocator = { git = "https://github.com/frsrblch/gen_id_allocator" }
+gen_id_component = { git = "https://github.com/frsrblch/gen_id_component" }
+
+[dev-dependencies]
+gen_id_allocator = { git = "https://github.com/frsrblch/gen_id_allocator", features = ['id_creation'] }
