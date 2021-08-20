@@ -40,7 +40,7 @@ impl<Source, Target> OneToMany<Source, Target> {
         } else {
             let mut set = HashSet::with_capacity(4);
             set.insert(target);
-            self.targets.insert_with(source, set, || HashSet::new());
+            self.targets.insert_with(source, set, HashSet::new);
         }
     }
 
